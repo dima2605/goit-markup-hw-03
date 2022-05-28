@@ -34,7 +34,7 @@ ul{
     margin: 0 auto;
     padding: 0 15px;
 
-    /* outline: 2px solid tomato; */
+    outline: 2px solid tomato;
 }
 /* ---------------------logo----------------- */
 .page-logo:focus{
@@ -351,6 +351,8 @@ ul{
 
 /* --------------portfolio------------------ */
 .btn{
+    display: flex;
+   
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
