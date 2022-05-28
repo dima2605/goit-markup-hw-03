@@ -15,11 +15,32 @@ body{
     color: var(--primary-text-color);
     font-size: 14px;
     letter-spacing: 0.03em;
+    
 }
 
+
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container {
+
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+
+    /* text-align: center; */
+}
 /* ---------------------logo----------------- */
 .page-logo:focus{
     color: var(--accent-color);
+    
 }
 .logo-active{
     font-family:'Raleway',sans-serif;
@@ -36,46 +57,59 @@ body{
     color: var(--title-text-color);
 }
 /* --------------------header-------------------- */
+
 .page-header{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     background-color: var(--white-text-color);
 }
 .site-nav .link {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
+
+.auth-nav .link {
+    color: var(--primary-text-color);
+}
+
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.auth-nav .link:focus,
+.auth-nav .link:hover {
     color: var(--accent-color);
 }
 
-.auth-nav .link{
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-}
-.auth-nav .link:focus, 
-.auth-nav .link:hover{
-    color: var(--accent-color);
-}
 .site-nav .current{
     color: var(--accent-color);
+}
+
+.site-nav,
+.auth-nav{
+    display: flex;
 }
 /* ---------------hero--------------------- */
 .hero,
 .group{
     background-color:var(--second-background-color);
+    outline: 2px solid tomato;
 }
+.hero{
+    text-align: center;
+    /* margin-bottom: 94px; */
+}
+
 .hero-title{
+    margin-top: 0;
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
     color: var(--white-text-color);
+    /* background-color: teal; */
 }
 .hero-btn{
     background-color: var(--accent-color);
@@ -84,13 +118,14 @@ body{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    display:inline-block;
+    /* align-items: center; */
+    /* text-align: center; */
     letter-spacing: 0.06em;
     color: var(--white-text-color);
     font-family: inherit;
     cursor: pointer;
+    /* margin-bottom: 200px; */
 }
 .hero-btn:hover, 
 .hero-btn:focus{
@@ -117,31 +152,75 @@ body{
     background-color:var(--primary-background-color);
 }
 .benefits .title{
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
     color:var(--title-text-color);
+    /* background-color:tomato; */
 }
 .benefits .text{
+    margin-top: 0;
+    margin-bottom: 0;
     line-height: 1.71;
     color: var(--primary-text-color);
+}
+
+.benefits {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    /* background-color: rebeccapurple; */
+
+    /* margin-bottom: 94px;  */
+    /* background-color: tomato; */
 }
 
 /* ----------------works-------------------------- */
 .team-title,
 .works-title{
+    margin-top: 0;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     color: var(--title-text-color);
 }
+.works{
+    /* background-color: tomato; */
+    /* margin-bottom: 94px; */
+    padding-bottom: 102px;
+}
+
+
 /* ----------------team----------------------------- */
 
 .team{
+    
     background-color: var(--third-background-color);
+    padding-top: 178px;
+    padding-bottom: 102px;
+}
+
+.team .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+     text-align: center;
+    color: var(--title-text-color); 
+}
+
+.imag{
+    margin-bottom: 30px;
 }
 .team-list{
+   
+
+    
   background-color: var(--white-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -152,15 +231,12 @@ body{
     height: 368px;
     left: 215px;
     top: 1635px;
+    
 }
-.team .title{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    color: var(--title-text-color);
-}
+
 .team .text{
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -187,16 +263,10 @@ body{
 }
 
 .menu .home-link{
-   
     color: var(--white-text-color);
 }
 
-.link{
-    text-decoration: none;
-}
-.list{
-    list-style: none;
-}
+
 
 
 /* --------------portfolio------------------ */
