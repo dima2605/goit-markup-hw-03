@@ -30,6 +30,17 @@ ul{
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+    padding: 0;
+}
+
 .link{
     text-decoration: none;
 }
@@ -40,6 +51,10 @@ ul{
     padding: 0 15px;
 
     /* outline: 2px solid tomato; */
+}
+
+.section {
+    padding: 94px 0;
 }
 /* ---------------------logo----------------- */
 .page-logo:focus{
@@ -71,8 +86,7 @@ ul{
 /* --------------------header-------------------- */
 
 .page-header{
-    background-color: var(--white-text-color);
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 
     font-weight: 500;
     line-height: 1.14;
@@ -109,9 +123,10 @@ ul{
 /* auth-nav */
 
 .auth-nav{
-    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    display: flex;
+ 
     margin-left: auto;
 }
 
@@ -120,6 +135,9 @@ ul{
 }
 
 .auth-nav .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
 }
 
@@ -140,11 +158,12 @@ ul{
 }
 
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
 }
 
 .hero-title{
-    padding-top: 200px;
     width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -160,8 +179,6 @@ ul{
 }
 
 .hero-btn{
-    display:inline-block;
-    margin-bottom: 200px;
     padding: 10px 32px;
     border-radius: 4px;
     border: none;
@@ -210,20 +227,18 @@ ul{
 }
 
 .benefits .title{
-    margin-top: 0;
     margin-bottom: 10px;
 
     color:var(--title-text-color);
 
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
 }
 
 .benefits .text{
-    margin-top: 0;
-    margin-bottom: 0;
-
+    width: 270px;
     color: var(--primary-text-color);
 
     line-height: 1.71;
@@ -231,6 +246,7 @@ ul{
 
 .benefits {
     padding: 94px 0;
+    text-align: left;
  }
 
  .benefits{
@@ -240,7 +256,6 @@ ul{
 
 .team-title,
 .works-title{
-    margin-top: 0;
     margin-bottom: 50px;
 
     color: var(--title-text-color);
@@ -273,7 +288,7 @@ ul{
 }
 
 .team .title {
-    margin-top: 0;
+   
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -305,7 +320,7 @@ ul{
 }
 
 .team .text{
-    margin-top: 0;
+    
     margin-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
@@ -315,6 +330,8 @@ ul{
 }
 /* -------------footer-------------- */
 .group {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--second-background-color);
 }
 
@@ -322,8 +339,8 @@ ul{
     color: var(--white-text-color);
 }
 
- .group .page-logo{
-    padding-top: 60px;
+ .group .foot-logo{
+    
     padding-bottom: 0;
     margin-bottom: 20px;
     display: block;
@@ -335,7 +352,7 @@ ul{
 
 .place {
     font-style: normal;
-    padding-bottom: 60px;
+    
 }
 .menu .link-direction {
     color: var(--footer-color);
@@ -355,11 +372,12 @@ ul{
 }
 
 /* --------------portfolio------------------ */
+
 .btn-list{
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 34px;
+
 }
 
 .btn-list .item+.item{
@@ -367,6 +385,7 @@ ul{
 }
 
 .btn{
+    
     display: flex;
     border-radius: 4px;  
     border: none; 
@@ -374,9 +393,9 @@ ul{
 
     color: var(--title-text-color);
     background-color: var(--third-background-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+    0px 2px 2px rgba(0, 0, 0, 0.12); */
 
 
     font-family: inherit;
@@ -424,8 +443,7 @@ ul{
 
 }
 .port-title{
-    margin: 0;
-    padding: 0;
+ 
     margin-bottom: 4px;
 
     font-weight: 700;
@@ -435,8 +453,7 @@ ul{
     color: var(--title-text-color);
 }
 .port-text{
-    margin: 0;
-    padding: 0;
+  
     font-size: 16px;
     line-height: 1.88;
     color: var(--primary-text-color);
